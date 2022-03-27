@@ -1,3 +1,5 @@
+package constructor;
+
 public class 程序706创建一个对象的步骤 {
 
 	public static void main(String[] args) {

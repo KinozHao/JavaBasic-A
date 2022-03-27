@@ -1,4 +1,6 @@
-public class 程序702构造方法的重载以及注意事项 {
+package constructor;
+//构造方法的重载以及注意事项
+public class GouZQOverLoad {
 	public static void main(String[] args) {
 	people p1=new people();
 	p1.show();

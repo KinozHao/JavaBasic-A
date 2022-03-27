@@ -1,4 +1,4 @@
-package toool;
+package ertest.toool;
 
 public class ToolStatic {
 	//工具类中所有的方法都是静态的 

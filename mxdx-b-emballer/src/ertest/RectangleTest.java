@@ -1,7 +1,7 @@
 package ertest;
 
 import java.util.Scanner;
-public class 程序707长方形案例练习 {
+public class RectangleTest {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner (System.in);
 		System.out.println("enter the first number for the width");

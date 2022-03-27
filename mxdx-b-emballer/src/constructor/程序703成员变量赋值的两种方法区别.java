@@ -1,3 +1,5 @@
+package constructor;
+
 public class 程序703成员变量赋值的两种方法区别 {
 
 	public static void main(String[] args) {

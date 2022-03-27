@@ -33,16 +33,17 @@ class cat{
         return leg;
     }
 
-    public void setAge(int a) {
-        if (a >0 && a<40){
+    public void setAge(int a){
+        if (a > 0 && a<30){
             age = a;
-        }else{
+        }else {
             age = 0;
         }
     }
-    public int getAge() {
-        return age;
+    public int getAge(){
+        return  age;
     }
+
 
     public void info(){
         System.out.println("age:"+age+"\tlegs:"+leg);
