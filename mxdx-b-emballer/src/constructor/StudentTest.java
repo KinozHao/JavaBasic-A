@@ -1,6 +1,6 @@
 package constructor;
 
-public class 程序704学生类代码及测试 {
+public class StudentTest {
 	public static void main(String[] args) {
 		student c=new student();//无参构造
 		c.getname("Lily");//设置名字

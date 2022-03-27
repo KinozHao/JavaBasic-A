@@ -1,6 +1,11 @@
+/**
+ * @author kinoz
+ * @date 2022/3/27 - 21:19
+ * @apiNote 构造器体现
+ */
 package constructor;
-//什么是构造器
-public class GouZQ {
+
+public class ConstructorBasic {
 
 	public static void main(String[] args) {
 		//构造器的作用就是创建对象
