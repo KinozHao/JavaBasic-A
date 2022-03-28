@@ -1,39 +1,49 @@
 package constructor;
-
+/**
+ * @author kinoz
+ * @date 2022/3/28 - 16:10
+ * @apiNote 构造器学生类练习
+ */
 public class StudentTest {
 	public static void main(String[] args) {
-		student c=new student();//无参构造
-		c.getname("Lily");//设置名字
-		c.getage(18);//设置年龄
-		System.out.println(c.setname()+"...."+c.setage());
-		student c2=new student("Lliy",19);
-		c2.show();
+		student st = new student("JAM",18);
+		System.out.println(st.Info());
+		student st2 = new student("JAM",18,"Harvard");
+		System.out.println(st2.Info());
+		student st3 = new student("JAM",18,"Harvard","CS");
+		System.out.println(st3.Info());
 	}
 
 }
 class student{
-	private String name;
-	private int age;
-	public student(){//无参构造
-		
+	String name;
+	int age;
+	String school;
+	String major;
+	//构造器的重载更好的去体验它的用法
+	public student(String MZ,int AG){
+		name = MZ;
+		age = AG;
 	}
-	public student(String name,int age){//有参构造
-		this.age=age;	//赋值 this区分成员变量和局部变量
-		this.name=name;
+	public student(String MZ,int AG,String SC){
+		name = MZ;
+		age = AG;
+		school =SC;
 	}
-	public void getname(String name){//设置名字
-		this.name=name;
+	public student(String MZ,int AG,String SC,String MG){
+		name = MZ;
+		age = AG;
+		school =SC;
+		major = MG;
 	}
-	public String setname(){
-		return name;
+	public String Info(){
+		if (school == null){
+			return name+"  "+age;
+		}else if (major == null){
+			return name+"  "+age+"  "+school;
+		}else{
+			return name+"  "+age+"  "+school+"  "+major;
+		}
 	}
-	public void getage(int age){//设置年龄
-		this.age=age;
-	}
-	public int setage(){
-		return age;
-	}
-	public void show(){//展示语句
-		System.out.println(name+"..."+age);
-	}
+
 }

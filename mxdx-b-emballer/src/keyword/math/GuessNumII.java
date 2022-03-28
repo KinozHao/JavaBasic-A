@@ -1,4 +1,4 @@
-package keyword.MathTest;
+package keyword.math;
 //Random类实现随机数小游戏
 import java.util.Random;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package keyword.MathTest;
+package keyword.math;
 //Math实现随机数小游戏
 import java.util.Scanner;
 public class GuessNumI {

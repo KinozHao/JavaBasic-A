@@ -1,4 +1,4 @@
-package keyword;
+package keyword.math;
 /**
  * @apiNote 随机数的使用
  * */
