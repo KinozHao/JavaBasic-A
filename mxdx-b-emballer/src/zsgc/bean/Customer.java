@@ -3,21 +3,21 @@ package zsgc.bean;
 /**
  * @author kinoz
  * @date 2022/4/2 - 14:41
- * @apiNote ´ËÀàÎªÊµÌå¶ÔÏó£¬ÓÃÀ´·â×°¿Í»§ÐÅÏ¢
+ * @apiNote 此类为实体对象，用来封装客户信息
  */
 //upload fuck git
 public class Customer {
-    private String name;    //¿Í»§ÐÕÃû
-    private char gender;    //¿Í»§ÐÔ±ð
-    private int age;    //¿Í»§Äê¼Í
-    private String phone;    //¿Í»§µç»°ºÅ
-    private String email;    //¿Í»§ÓÊÏä
+    private String name;    //用户名
+    private char gender;    //性别
+    private int age;    //年纪
+    private String phone;    //手机号
+    private String email;    //邮箱
 
-    public Customer(){  //¿Õ²Î¹¹ÔìÆ÷
+    public Customer(){  //空参构造器
 
     }
     //this is a change with git push
-    public Customer(String name, char gender, int age, String phone, String email) {    //È«²Î¹¹ÔìÆ÷
+    public Customer(String name, char gender, int age, String phone, String email) {    //有参构造器
         this.name = name;
         this.gender = gender;
         this.age = age;
