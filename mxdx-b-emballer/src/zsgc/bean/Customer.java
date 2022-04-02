@@ -3,20 +3,20 @@ package zsgc.bean;
 /**
  * @author kinoz
  * @date 2022/4/2 - 14:41
- * @apiNote 此类为实体对象，用来封装客户信息
+ * @apiNote 麓脣脌脿脦陋脢碌脤氓露脭脧贸拢卢脫脙脌麓路芒脳掳驴脥禄搂脨脜脧垄
  */
 public class Customer {
-    private String name;    //客户姓名
-    private char gender;    //客户性别
-    private int age;    //客户年纪
-    private String phone;    //客户电话号
-    private String email;    //客户邮箱
+    private String name;    //驴脥禄搂脨脮脙没
+    private char gender;    //驴脥禄搂脨脭卤冒
+    private int age;    //驴脥禄搂脛锚录脥
+    private String phone;    //驴脥禄搂碌莽禄掳潞脜
+    private String email;    //驴脥禄搂脫脢脧盲
 
-    public Customer(){  //空参构造器
+    public Customer(){  //驴脮虏脦鹿鹿脭矛脝梅
 
     }
-
-    public Customer(String name, char gender, int age, String phone, String email) {    //全参构造器
+    //this is a change with git push
+    public Customer(String name, char gender, int age, String phone, String email) {    //脠芦虏脦鹿鹿脭矛脝梅
         this.name = name;
         this.gender = gender;
         this.age = age;
