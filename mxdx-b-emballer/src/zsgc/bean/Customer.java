@@ -5,6 +5,7 @@ package zsgc.bean;
  * @date 2022/4/2 - 14:41
  * @apiNote ´ËÀàÎªÊµÌå¶ÔÏó£¬ÓÃÀ´·â×°¿Í»§ÐÅÏ¢
  */
+//upload fuck git
 public class Customer {
     private String name;    //¿Í»§ÐÕÃû
     private char gender;    //¿Í»§ÐÔ±ð
