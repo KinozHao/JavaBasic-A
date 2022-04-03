@@ -21,17 +21,18 @@ public class Bank {
         customers[numberOfCustomer] = cust;
         numberOfCustomer++;
     }
-    //获取客户的个数
-    public int getNumberOfCustomer() {
-        return numberOfCustomer;
-    }
 
-    //获取指定位置上的一个客户
+    //获取指定位置上的客户
     public Customer getCustomers(int index) {
         if (index >=0 && index < numberOfCustomer){
             return  customers[index];
         }else{
             throw new RuntimeException("数组越界");
         }
+    }
+
+    //获取客户的个数
+    public int getNumberOfCustomer() {
+        return numberOfCustomer;
     }
 }

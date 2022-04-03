@@ -39,20 +39,20 @@ public class CustomerView {
                     addNewCustomer();
                     break;
                 case '2':
-                modifyCustomer();
+                    modifyCustomer();
                     break;
                 case '3':
-                deleteCustomer();
+                    deleteCustomer();
                     break;
                 case '4':
-                listAllCustomers();
+                    listAllCustomers();
                     break;
                 case '5':
-                System.out.print("是否确认退出(Y/N):");
-                char exit = CMUtility.readConfirmSelection();
-                if (exit == 'Y'){
-                    isFag = false;
-                }
+                    System.out.print("是否确认退出(Y/N):");
+                    char exit = CMUtility.readConfirmSelection();
+                    if (exit == 'Y'){
+                        isFag = false;
+                    }
             }
         }
 
@@ -123,14 +123,14 @@ public class CustomerView {
         // number-1:用户默认输入数字比索引大1所以要-1
         boolean isReplaced = customerList.replaceCustomer(number-1,newcust);
         if (isReplaced){
-            System.out.println("---------------------------替换成功---------------------------");
+            System.out.println("---------------------------修改成功---------------------------");
         }else {
-            System.out.println("---------------------------替换失败---------------------------");
+            System.out.println("---------------------------修改失败---------------------------");
         }
     }
     //删除客户信息
     public void deleteCustomer(){
-        System.out.println("---------------------------修改客户---------------------------");
+        System.out.println("---------------------------删除客户---------------------------");
         int number; //判断用户数输入数字
         for (;;){
             System.out.print("请选择待删除客户的标号(-1退出):");
@@ -161,7 +161,7 @@ public class CustomerView {
     //查看所有客户信息
     public void listAllCustomers(){
         System.out.println("---------------------------客户列表---------------------------\n");
-        int total = customerList.getTotal();
+        int total = customerList.getTotalCusNum();
         if (total == 0){
             System.out.println("没有客户信息");
         }else {

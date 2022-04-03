@@ -5,7 +5,7 @@ package zsgc.bean;
  * @date 2022/4/2 - 14:41
  * @apiNote 此类为实体对象，用来封装客户信息
  */
-//upload fuck git
+
 public class Customer {
     private String name;    //用户名
     private char gender;    //性别
@@ -16,7 +16,7 @@ public class Customer {
     public Customer(){  //空参构造器
 
     }
-    //this is a change with git push
+
     public Customer(String name, char gender, int age, String phone, String email) {    //有参构造器
         this.name = name;
         this.gender = gender;
@@ -25,43 +25,45 @@ public class Customer {
         this.email = email;
     }
 
-    public String getName() {
+
+        public String getName () {
         return name;
     }
 
-    public void setName(String name) {
+        public void setName (String name){
         this.name = name;
     }
 
-    public char getGender() {
+        public char getGender () {
         return gender;
     }
 
-    public void setGender(char gender) {
+        public void setGender ( char gender){
         this.gender = gender;
     }
 
-    public int getAge() {
+        public int getAge () {
         return age;
     }
 
-    public void setAge(int age) {
+        public void setAge ( int age){
         this.age = age;
     }
 
-    public String getPhone() {
+        public String getPhone () {
         return phone;
     }
 
-    public void setPhone(String phone) {
+        public void setPhone (String phone){
         this.phone = phone;
     }
 
-    public String getEmail() {
+        public String getEmail () {
         return email;
     }
 
-    public void setEmail(String email) {
+        public void setEmail (String email){
         this.email = email;
     }
+
 }
