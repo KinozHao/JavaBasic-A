@@ -1,3 +1,4 @@
+//封装性的基本理解
 public class ExtendBasic {
 	public static void main(String[] args) {
 		cat c = new cat();	//cat自己有方法属性 优先调用自己的方法属性

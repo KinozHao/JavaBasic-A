@@ -4,20 +4,21 @@ package keyword;
 * */
 public class StaticAttention {
 	public static void main(String[] args) {
-		oh n=new oh();
+		staticss n=new staticss();
 		n.runs();
-		oh.run();
+		staticss.run();
 	}
 
 }
-class oh{
-	int num1=1;//非静态的成员变量
-	static int num2=2;//静态的成员变量
+class staticss {
+	int num1 = 1;
+	static int num2 = 2;
+
 	public void runs(){//非静态的成员方法
-		System.out.println(num1);//非静态的成员方法 既可以访问静态的成员 也可以访问非静态的成员
+		System.out.println(num1);//非静态的方法 静态属性和非静态都可调用
 		System.out.println(num2);
 	}
-	public static void run(){//静态的成员方法
+	public static void run(){//静态的方法 只能调用静态的属性
 		//System.out.println(num1);
 		System.out.println(num2);
 	}

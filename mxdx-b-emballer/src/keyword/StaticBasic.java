@@ -8,6 +8,8 @@ public class StaticBasic {
 		k.name="Kito";//调用姓名属性并且赋值
 		k.country="japan";//调用国际属性并且赋值
 		k.runs();//调用runs打印语句
+
+
 		lei k2=new lei();
 		k2.name="成周洲";
 		k2.runs();//调用runs打印语句
