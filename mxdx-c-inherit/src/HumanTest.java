@@ -47,15 +47,12 @@ class Human {
 	public String getName() {
 		return name;
 	}
-
 	public void setName(String name) {
 		this.name = name;
 	}
-
 	public int getTel() {
 		return tel;
 	}
-
 	public void setTel(int tel) {
 		this.tel = tel;
 	}
@@ -75,10 +72,11 @@ class Engineer extends Human{
 }
 
 class CampusStudent extends Engineer{
-	String major;	//自己特有属性
+
 	public CampusStudent(){}
 	public CampusStudent(String name,int tel,String major){	//调用父类的属性
 		super(name,tel);
+		this.major = major;
 	}
 	public void JSEI(){	//特有方法
 		System.out.println("i's a  collage student at jsei");
