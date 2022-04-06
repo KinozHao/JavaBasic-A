@@ -1,10 +1,9 @@
+package constructor;
 /**
  * @author kinoz
  * @date 2022/3/27 - 21:19
  * @apiNote 构造器体现
  */
-package constructor;
-
 public class ConstructorBasic {
 
 	public static void main(String[] args) {

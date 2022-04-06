@@ -28,12 +28,13 @@ class animals{//共同的一个类是动物类
 }
 
 class cat extends animals{
-	public void eat(){	//吃饭的功能
+	public void eat(){	//构成了方法的重写
 		System.out.println("猫咪吃饭");
 	}
-	public void sleep(){	//睡觉的功能
+	public void sleep(){	//构成方法重写
 		System.out.println("猫咪睡觉");
 	}
 }
 
-class dog extends animals{ }
+//构成多重继承
+class dog extends cat{ }

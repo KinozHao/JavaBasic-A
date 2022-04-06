@@ -4,14 +4,14 @@ package ertest;
  * @date 2022/3/27 - 19:17
  * @apiNote 封装的练习
  */
-public class persontest {
+public class PersonTest {
     public static void main(String[] args) {
-        person p = new person();
+        Person p = new Person();
         p.setAge(16);
         System.out.println("年纪为: "+p.getAge());
     }
 }
-class person{
+class Person {
     private int age;
     private int num;
     public void setAge(int agee) {

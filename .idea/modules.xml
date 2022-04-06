@@ -8,8 +8,9 @@
       <module fileurl="file://$PROJECT_DIR$/mxdx-a-basic/mxdx-a-basic.iml" filepath="$PROJECT_DIR$/mxdx-a-basic/mxdx-a-basic.iml" />
       <module fileurl="file://$PROJECT_DIR$/mxdx-b-emballer/mxdx-b-emballer.iml" filepath="$PROJECT_DIR$/mxdx-b-emballer/mxdx-b-emballer.iml" />
       <module fileurl="file://$PROJECT_DIR$/mxdx-c-inherit/mxdx-c-inherit.iml" filepath="$PROJECT_DIR$/mxdx-c-inherit/mxdx-c-inherit.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mxdx-d-dt-jk/mxdx-d-dt-jk.iml" filepath="$PROJECT_DIR$/mxdx-d-dt-jk/mxdx-d-dt-jk.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mxdx-e-anonymousclass/mxdx-e-anonymousclass.iml" filepath="$PROJECT_DIR$/mxdx-e-anonymousclass/mxdx-e-anonymousclass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mxdx-d-polymorphism/mxdx-d-polymorphism.iml" filepath="$PROJECT_DIR$/mxdx-d-polymorphism/mxdx-d-polymorphism.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mxdx-e-interface-abstract/mxdx-e-interface-abstract.iml" filepath="$PROJECT_DIR$/mxdx-e-interface-abstract/mxdx-e-interface-abstract.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mxdx-f-anonymousclass/mxdx-f-anonymousclass.iml" filepath="$PROJECT_DIR$/mxdx-f-anonymousclass/mxdx-f-anonymousclass.iml" />
     </modules>
   </component>
 </project>
