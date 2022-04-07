@@ -4,6 +4,7 @@ package ckeyword;
  * @author kinoz
  * @date 2022/4/4 - 18:33
  * @apiNote 继承Humans的医生类
+ * super的具体使用，以及和属性，方法，构造器的关系
  */
 public class Doctor extends Humans {
     String major;

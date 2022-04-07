@@ -6,10 +6,10 @@ package sitest;
 
 public class StaffView {
 	public static void main(String[] args) {
-		mathod(new Manager());
-		mathod2(new UiEngineer());
+		method(new Manager());
+		method2(new UiEngineer());
 	}
-	public static void mathod(Manager a){//方法调用
+	public static void method(Manager a){//方法调用
 		a.setname("成总理");
 		a.setid("8795");
 		a.setsalary(80000);
@@ -17,7 +17,7 @@ public class StaffView {
 		System.out.println("姓名:"+a.getname()+" ID:"+a.getid()+" 薪资:"+a.getsalary());
 		System.out.println("奖金:"+a.getbonus());
 	}
-	public static void mathod2(UiEngineer b){//方法调用
+	public static void method2(UiEngineer b){//方法调用
 		b.setname("小吕");
 		b.setid("6456");
 		b.setsalary(50);

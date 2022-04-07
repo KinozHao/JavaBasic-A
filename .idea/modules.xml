@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/baisc-little-project/baisc-little-project.iml" filepath="$PROJECT_DIR$/baisc-little-project/baisc-little-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-aproject/java-aproject.iml" filepath="$PROJECT_DIR$/java-aproject/java-aproject.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-array/java-array.iml" filepath="$PROJECT_DIR$/java-array/java-array.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-basic/java-basic.iml" filepath="$PROJECT_DIR$/java-basic/java-basic.iml" />
       <module fileurl="file://$PROJECT_DIR$/mxdx-a-basic/mxdx-a-basic.iml" filepath="$PROJECT_DIR$/mxdx-a-basic/mxdx-a-basic.iml" />
@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/mxdx-d-polymorphism/mxdx-d-polymorphism.iml" filepath="$PROJECT_DIR$/mxdx-d-polymorphism/mxdx-d-polymorphism.iml" />
       <module fileurl="file://$PROJECT_DIR$/mxdx-e-interface-abstract/mxdx-e-interface-abstract.iml" filepath="$PROJECT_DIR$/mxdx-e-interface-abstract/mxdx-e-interface-abstract.iml" />
       <module fileurl="file://$PROJECT_DIR$/mxdx-f-anonymousclass/mxdx-f-anonymousclass.iml" filepath="$PROJECT_DIR$/mxdx-f-anonymousclass/mxdx-f-anonymousclass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mxdx-g-object/mxdx-g-object.iml" filepath="$PROJECT_DIR$/mxdx-g-object/mxdx-g-object.iml" />
     </modules>
   </component>
 </project>

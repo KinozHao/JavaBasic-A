@@ -8,21 +8,32 @@ package basic;
 
 public class DuotBasic {
 	public static void main(String[] args) {
-	cat min = new cat();
-	min.eat();
+		Cat min = new Cat();
+		min.eat();
 
-	ainmals als = new cat();//父类引用指向子类对象
-	als.eat();
+		//方法：编译看左，运行看右
+		Ainmals als = new Cat();//父类引用指向子类对象
+		als.eat();
+
+		//属性：遍历和运行都是左边
+		System.out.println(als.leg);
+
+		if (als instanceof Cat){	//向下转型
+			Cat ct = (Cat)als;
+			System.out.println("猫只有"+ct.leg+"条腿");
+		}
 	}
 }
 
-class ainmals {
+class Ainmals {
+	int leg = 88;
 	public void eat(){
 		System.out.println("Animals eats food");
 	}
 }
-class cat extends ainmals {
+class Cat extends Ainmals {
+	int leg = 4;
 	public void eat(){
-		System.out.println("Cat eats fishs");
+		System.out.println("Cat eats fish");
 	}
 }
