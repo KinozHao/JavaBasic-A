@@ -1,6 +1,7 @@
-/*
-Transfer Object Method get a int Types NUMS Is a add nums
-Return the Hashcode Types is Int
+/**
+ * @author kinoz
+ * @date 2022/4/9 - 17:53
+ * @apiNote 具体讲解在反射部分
  */
 public class HashCode {
     public static void main(String[] args) {

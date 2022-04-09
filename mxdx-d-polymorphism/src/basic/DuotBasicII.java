@@ -3,28 +3,34 @@
  * 直接创建子类对象更方便可以使用子类中特有的属性和行为
 * */                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            package basic;
 
+import org.junit.Test;
+
 public class DuotBasicII {
-	public static void main(String[] args) {
-
-		DuotBasicII dii = new DuotBasicII();
-		dii.func(new Japan());	//匿名对象
-		System.out.println();
-		dii.func(new China());
-
+	@Test
+	public void textChina(){
+		DuotBasicII dl = new DuotBasicII();
+		dl.FatherMethod(new China());
 	}
 
-	public void func(Human human){	//相当于peoples human = new Japan();
-		human.food();		//输出的为子类重写父类的方法
-		human.person();
+	@Test
+	public void textJapan(){
+		DuotBasicII dl = new DuotBasicII();
+		dl.FatherMethod(new Japan());
+	}
 
-		if (human instanceof China){	//体现向下转型 去调用子类的方法
-			China cn = (China) human;
-			cn.workHard();
+	public void FatherMethod(Human human){
+		human.person();		//调用为Human 实际输出为子类自己重写后的方法
+		human.food();
+
+		////体现向下转型 去调用子类特有的方法
+		if (human instanceof Japan){
+			Japan jp = (Japan)human;
+			jp.wordEasy();
 		}
 
-		if (human instanceof Japan){
-			Japan jp = (Japan) human;
-			jp.wordEasy();
+		if (human instanceof China){
+			China cn = (China) human;
+			cn.workHard();
 		}
 	}
 
@@ -60,7 +66,7 @@ class Japan extends Human {
 		System.out.println("We eat Sushi");
 	}
 	public void wordEasy(){
-		System.out.println("URGENTLY_NEEDED IT engineer 10/6/5！！！");
+		System.out.println("自己的方法 URGENTLY_NEEDED IT engineer 10/6/5！！！");
 	}
 }
 class China extends Human {
@@ -72,6 +78,6 @@ class China extends Human {
 	}
 
 	public void workHard(){
-		System.out.println("内卷 内卷 Like 996.icu");
+		System.out.println("自己的方法 内卷 内卷 Like 996.icu");
 	}
 }

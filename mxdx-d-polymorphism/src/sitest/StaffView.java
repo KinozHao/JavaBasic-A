@@ -6,76 +6,84 @@ package sitest;
 
 public class StaffView {
 	public static void main(String[] args) {
-		method(new Manager());
-		method2(new UiEngineer());
+		method(new Manager("成经理","8795",80000,30000));
+		method(new UiEngineer("小吕","6400",50));
 	}
-	public static void method(Manager a){//方法调用
-		a.setname("成总理");
-		a.setid("8795");
-		a.setsalary(80000);
-		a.setbonus("3W");
-		System.out.println("姓名:"+a.getname()+" ID:"+a.getid()+" 薪资:"+a.getsalary());
-		System.out.println("奖金:"+a.getbonus());
+	public static void method(Staff staff){
+		System.out.print(staff.info()+" ");
+
+		/**
+		* @apiNote 以下是为了调用子类特有的方法
+		* */
+		if (staff instanceof Manager){
+			Manager manager = (Manager)staff;
+			manager.position();
+		}
+
+		if (staff instanceof UiEngineer){
+			UiEngineer uiEngineer = (UiEngineer)staff;
+			uiEngineer.position();
+		}
 	}
-	public static void method2(UiEngineer b){//方法调用
-		b.setname("小吕");
-		b.setid("6456");
-		b.setsalary(50);
-		System.out.println("姓名:"+b.getname()+" ID:"+b.getid()+" 薪资:"+b.getsalary());
-	}
+
 }
 abstract class Staff {
-	private String name;	//成员变量
-	private String id;		//成员变量
-	private double salary;	//成员变量
-	public Staff(){}		//空参构造
+	private String name;	//名称
+	private String id;		//员工号
+	private double salary;	//工资
+	public Staff(){}
 	public Staff(String name, String id, double salary){//有参构造
 		this.name=name;
 		this.id=id;
 		this.salary=salary;
 	}
-	public void setname(String name){	//设置名字
-		this.name=name;
+	public String info(){
+		return "机锋科技有限公司员工";
 	}
+
 	public String getname(){			//获取名字
 		return name;
-	}
-	public void setid(String id){		//设置id
-		this.id=id;
 	}
 	public String getid(){				//获取id
 		return id;
 	}
-	public void setsalary(double salary){//设置salary
-		this.salary=salary;
-	}
 	public double getsalary(){			//获取salary
 		return salary;
 	}
-	public abstract void work();		//抽象方法
 }
 class Manager extends Staff {			//子继承父
-	private String bonus;
-	public void setbonus(String bonus){
-		this.bonus=bonus;
-	}
-	public String getbonus(){
+	private int bonus;				//子类特有属性
+
+	public int getbonus(){
 		return bonus;
 	}
 	public Manager(){}
-	public Manager(String name, String id, double salary){
+	public Manager(String name, String id, double salary,int bonus){
 		super(name,id,salary);
+		this.bonus = bonus;
 	}
-	public void work(){
-		System.out.println("My job is to manage the peoples");
+	@Override
+	public String info(){
+		return "姓名: "+ getname()+" ID:"+ getid()+" 薪资:"+ getsalary()+" 奖金:"+ getbonus();
+	}
+
+	//子类特有方法
+	public void position(){
+		System.out.println("产品经理");
 	}
 }
 class UiEngineer extends Staff {		//子继承父
-	public UiEngineer(){}				//空参构造
+	public UiEngineer(){}
 	public UiEngineer(String name, String id, double salary){//有参构造
-		super(name,id,salary);			//super访问父类
+		super(name,id,salary);
 	}
-	public void work(){					//抽象方法
-		System.out.println("My job is to ride the code");
+
+	@Override
+	public String info(){
+		return "姓名: "+ getname()+" ID:"+ getid()+" 薪资:"+ getsalary();
+	}
+	//子类特有方法
+	public void position(){
+		System.out.println("技术岗");
 	}
 }

@@ -11,7 +11,8 @@
       <module fileurl="file://$PROJECT_DIR$/mxdx-d-polymorphism/mxdx-d-polymorphism.iml" filepath="$PROJECT_DIR$/mxdx-d-polymorphism/mxdx-d-polymorphism.iml" />
       <module fileurl="file://$PROJECT_DIR$/mxdx-e-interface-abstract/mxdx-e-interface-abstract.iml" filepath="$PROJECT_DIR$/mxdx-e-interface-abstract/mxdx-e-interface-abstract.iml" />
       <module fileurl="file://$PROJECT_DIR$/mxdx-f-anonymousclass/mxdx-f-anonymousclass.iml" filepath="$PROJECT_DIR$/mxdx-f-anonymousclass/mxdx-f-anonymousclass.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mxdx-g-object/mxdx-g-object.iml" filepath="$PROJECT_DIR$/mxdx-g-object/mxdx-g-object.iml" />
+      <module fileurl="file://$PROJECT_DIR$/next-g-object/next-g-object.iml" filepath="$PROJECT_DIR$/next-g-object/next-g-object.iml" />
+      <module fileurl="file://$PROJECT_DIR$/next-h-package-group/next-h-package-group.iml" filepath="$PROJECT_DIR$/next-h-package-group/next-h-package-group.iml" />
     </modules>
   </component>
 </project>
