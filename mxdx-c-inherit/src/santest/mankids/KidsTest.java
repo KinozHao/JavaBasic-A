@@ -13,7 +13,7 @@ public class KidsTest {
         someKid.setSalary(0);   //父类
         someKid.setSex(1);      //父类
 
-        someKid.manOrWoman();   //父类
-        someKid.employeed();    //父类
+        someKid.manOrWoman();   //调用父类方法
+        someKid.employed();    //重写父类方法
     }
 }

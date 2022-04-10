@@ -10,9 +10,9 @@ public class Customer {
     private String lastName;    //¿Í»§Ãû
     private Account account;
 
-    public Customer(String f, String l){
-        this.firstName = f;
-        this.lastName = l;
+    public Customer(String firstName, String lastName){
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 
     public Account getAccount() {

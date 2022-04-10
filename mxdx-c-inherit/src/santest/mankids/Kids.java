@@ -29,7 +29,7 @@ class Kids extends ManKind{
     }
 
     @Override
-    public void employeed() {
+    public void employed() {
         System.out.println("kids should study not job");
     }
 }

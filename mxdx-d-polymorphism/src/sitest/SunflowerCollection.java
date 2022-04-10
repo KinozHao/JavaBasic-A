@@ -1,7 +1,7 @@
 package sitest;
 
 /**
-* @apiNote 葵花宝典小练习
+* @apiNote 葵花宝典小练习(牵扯到了abstract)
 * */
 
 public class SunflowerCollection {

@@ -4,12 +4,12 @@ import java.util.Scanner;
 public class RectangleTest {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner (System.in);
-		System.out.println("enter the first number for the width");
+		System.out.println("输入宽");
 		int width=sc.nextInt();
-		System.out.println("enter the second number for the high");
+		System.out.println("输入高");
 		int high=sc.nextInt();
 		Rectangle s=new Rectangle(width,high);
-		System.out.println("长方形周长:"+s.getLenght());
+		System.out.println("长方形周长:"+s.getLength());
 		System.out.println("长方形面积:"+s.getArea());
 	}
 
@@ -34,9 +34,11 @@ class Rectangle{
 	public float gethigh(){
 		return high;
 	}
-	public float getLenght(){//求周长
+	//周长方法
+	public float getLength(){//求周长
 		return 2*(width+high);
 	}
+	//面积方法
 	public float getArea(){//求面积
 		return width*high;
 	}

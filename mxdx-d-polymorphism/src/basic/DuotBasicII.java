@@ -7,13 +7,13 @@ import org.junit.Test;
 
 public class DuotBasicII {
 	@Test
-	public void textChina(){
+	public void textChina(){	//测试China类输出
 		DuotBasicII dl = new DuotBasicII();
 		dl.FatherMethod(new China());
 	}
 
 	@Test
-	public void textJapan(){
+	public void textJapan(){	//测试Japan类输出
 		DuotBasicII dl = new DuotBasicII();
 		dl.FatherMethod(new Japan());
 	}

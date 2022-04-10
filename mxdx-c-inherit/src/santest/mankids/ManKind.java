@@ -42,7 +42,7 @@ public class ManKind {
         }
     }
 
-    public void employeed(){
+    public void employed(){
         String jobInfo = (salary == 0)? "no job":"job";
         System.out.println(jobInfo);
     }

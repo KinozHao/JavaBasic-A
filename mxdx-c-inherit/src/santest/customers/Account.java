@@ -58,8 +58,9 @@ public class Account {
         if (balance >= amount){
             balance -= amount;
             return;
+        }else {
+            System.out.println("Óà¶î²»×ã");
         }
-        System.out.println("Óà¶î²»×ã");
     }
 
     /**
