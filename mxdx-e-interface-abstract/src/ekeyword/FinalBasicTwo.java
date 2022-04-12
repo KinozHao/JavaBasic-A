@@ -1,4 +1,4 @@
-package dkeyword;
+package ekeyword;
 //final关键词修饰局部变量
 public class FinalBasicTwo {
 	public static void main(String[] args) {

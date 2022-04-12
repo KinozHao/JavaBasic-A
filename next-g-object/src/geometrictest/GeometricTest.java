@@ -16,12 +16,12 @@ public class GeometricTest{
         System.out.println("c1和c2的颜色相同吗?"+c1.getColor().equals(c2.getColor()));
 
     }
-
+    Circle c1 = new Circle(4.0);
+    Circle c2 = new Circle(3.0);
     @Test
     public void areaTest(){
         GeometricTest gts = new GeometricTest();
-        Circle c1 = new Circle(4.0);
-        Circle c2 = new Circle(3.0);
+
         gts.showArea(c1);
         gts.showArea(c2);
 
@@ -33,8 +33,6 @@ public class GeometricTest{
 
     @Test
     public void equalsAndToStringTest(){
-        Circle c1 = new Circle(4.0);
-        Circle c2 = new Circle(2.0);
 
         //重写的equals方法就是比较radius所以说不需要get方法了
         System.out.println("c1和c2的半径相同吗?"+c1.equals(c2));

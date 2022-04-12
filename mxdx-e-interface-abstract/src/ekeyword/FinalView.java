@@ -1,4 +1,4 @@
-package dkeyword;
+package ekeyword;
 /**
  * @apiNote final的用法
  * 1常量命名规范,一个单词/多个单词,字母全部大写,多个单词中间加_

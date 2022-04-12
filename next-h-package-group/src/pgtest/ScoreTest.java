@@ -31,7 +31,7 @@ public class ScoreTest {
 
             //Integer inScore = score;  //包装类
 
-            vr.addElement(score); //自动装箱
+            vr.addElement(score); //添加元素到vector 自动装箱体现
 
             //获取学生最高分
             if (maxScore < score){

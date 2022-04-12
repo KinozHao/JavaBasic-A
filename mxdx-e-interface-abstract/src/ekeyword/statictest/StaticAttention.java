@@ -1,4 +1,4 @@
-package dkeyword;
+package ekeyword.statictest;
 /**
 * @apiNote static关键词使用的注意事项
 * */
