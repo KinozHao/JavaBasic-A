@@ -38,7 +38,7 @@ abstract class Staff {
 		this.salary=salary;
 	}
 	public String info(){
-		return "机锋科技有限公司员工";
+		return "机峰科技有限公司员工";
 	}
 
 	public String getname(){			//获取名字
