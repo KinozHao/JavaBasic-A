@@ -8,6 +8,7 @@ import org.junit.Test;
  * @apiNote 数组工具类v2.0测试
  */
 public class ArrayUtilTest {
+    //一个数组
     int[] arr = {20,30,49,23,53,26,89};
 
     @Test

@@ -15,7 +15,7 @@ public class WrapperTest {
         Integer i1 = new Integer(300);
         System.out.println(i1.toString());
 
-        //传参为String时，之能为纯数字，否则就会报错
+        //传参为String时，只能为纯数字，否则就会报错
         Integer i2 = new Integer("300");
         System.out.println(i2.toString());
 
@@ -24,10 +24,6 @@ public class WrapperTest {
         Boolean b2 = new Boolean("false");
         System.out.println(b1);
         System.out.println(b2);
-
-        Order or = new Order();
-        System.out.println(or.isFlag);  //boolean默认返回false
-        System.out.println(or.isFLAG);  //包装类，不赋值，默认输出null
     }
 
     //包装类---->基本数据类型转换(调用xxxValue)
@@ -37,10 +33,15 @@ public class WrapperTest {
         float ft2 = ft.floatValue();
         System.out.println(ft2 + 26.9);
     }
+
+    public void orderTest(){
+        Order or = new Order();
+        System.out.println(or.isFlag);  //boolean默认返回false
+        System.out.println(or.isFLAG);  //包装类，不赋值，默认输出null
+    }
 }
 
 class Order {
     boolean isFlag;
     Boolean isFLAG;
-    Integer a;
 }

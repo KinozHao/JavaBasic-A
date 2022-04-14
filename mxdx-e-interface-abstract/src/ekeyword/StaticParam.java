@@ -10,7 +10,9 @@ import org.junit.Test;
 public class StaticParam {
     @Test
     public void methodTest(){
-
+        //类名直接调用静态方法
+        Person.national();
+        Person.info();
     }
 }
 class Person{

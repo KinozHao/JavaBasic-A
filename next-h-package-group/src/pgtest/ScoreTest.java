@@ -19,7 +19,7 @@ public class ScoreTest {
 
         int maxScore = 0;   //最高分
         for (;;){
-            System.out.println("输入学生成绩，负数代表结束");
+            System.out.println("输入学生成绩，输入负数代表结束");
             int score = sc.nextInt();
             if (score < 0){
                 break;

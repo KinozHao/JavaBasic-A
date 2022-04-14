@@ -22,9 +22,9 @@ public class CircleTest {
 
 class Circle{
     private int radius;
-    private int id;
-    private static int init=1001;   //初始化id
-    private static int total;
+    private int id; //圆id
+    private static int init = 1001;   //初始化圆id
+    private static int total;   //记录创建圆的个数
 
     public Circle(){
         id = init++;    //每new一个对象id自增一次

@@ -10,7 +10,7 @@ public class StaticBasic {
 
 	@Test
 	public void countryTest() {
-		//National.COUNTRY = "中国";	//静态变量可用类名调用
+		National.country = "中国";	//静态变量可用类名调用
 
 		National national = new National();
 		national.name = "吕威";
@@ -26,8 +26,8 @@ public class StaticBasic {
 }
 class National {
 	String name;
-	static String COUNTRY;	//静态变量
+	static String country;	//静态变量
 	public void info(){
-		System.out.println("姓名:"+ name + " 国籍:"+ COUNTRY);
+		System.out.println("姓名:"+ name + " 国籍:"+ country);
 	}
 }

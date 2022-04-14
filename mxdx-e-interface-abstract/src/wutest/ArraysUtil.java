@@ -18,6 +18,7 @@ public class ArraysUtil {
         }
         return MaxValue;
     }
+    //方法重载的具体体现
     public static float getMax(float[] arr){
         float MaxValue = arr[0];
         for (int i = 0; i < arr.length; i++) {
@@ -27,6 +28,7 @@ public class ArraysUtil {
         }
         return MaxValue;
     }
+
     //最小值
     public static int getMin(int[] arr){
         int MinValue = arr[0];
