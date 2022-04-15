@@ -64,4 +64,5 @@ public class AutoPackage {
         boolean b1 = Boolean.parseBoolean(s2);
         System.out.println(b1);
     }
+
 }

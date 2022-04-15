@@ -19,28 +19,12 @@ public class SingletonTest {
     }
 
     @Test
-    public void lazyTest(){
+    public void lazyTest() {
         System.out.println("懒汉式,判断是不是一个对象");
         //Lazy lazy3 = new Lazy(); 有可能创建多个对象
         Lazy lazy1 = Lazy.getInstance();
         Lazy lazy2 = Lazy.getInstance();
         System.out.println(lazy1 == lazy2);
     }
-
-    @Test
-    public void finalTest(){
-        System.out.println("Final方法输出");
-        FinalUs t1 = FinalUs.finalUs;
-        FinalUs t2 = FinalUs.finalUs;
-        System.out.println(t1 == t2);
-
-    }
 }
 
-
-class FinalUs {
-    private FinalUs(){}
-    //加了final 参数就不可改变
-    public static final FinalUs finalUs = new FinalUs();
-
-}

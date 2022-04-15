@@ -2,23 +2,24 @@ package codeblock;
 
 public class CbkInterview {
 	static{
-		System.out.println("程序802 静态代码块");//静态代码块优先于主方法执行
+		//静态代码块优先于主方法执行
+		System.out.println("静态代码块");
 	}
 	public static void main(String[] args) {
-		System.out.println("我是main方法");
-		studentss s1=new studentss();
-		studentss s2=new studentss();
+		System.out.println("Main方法输出");
+		Student s1=new Student();
+		Student s2=new Student();
 	}
 
 }
-class studentss{
+class Student {
 	static{
 		System.out.println("Students 静态代码块");
 	}
 	{
 		System.out.println("Students 构造代码块");
 	}
-	public studentss(){
+	public Student(){
 		System.out.println("Students 构造方法");
 	}
 }
