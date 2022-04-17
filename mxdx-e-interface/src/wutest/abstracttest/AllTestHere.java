@@ -20,16 +20,6 @@ public class AllTestHere {
 
     }
 
-    @Test
-    public void teacherTest(){
-        teacher a=new teacher("李老师",19);
-        a.teach();
-        System.out.println(a.getname()+"..."+a.getage());
-        teacher2 a2=new teacher2("刘校长",49);
-        a2.teach();
-        System.out.println(a2.getname()+"..."+a2.getage());
-    }
-
     /**
      * @apiNote 静态体现，我们直接通过类名来调用它
      * 多态体现，提高代码书写的效率
@@ -50,5 +40,17 @@ public class AllTestHere {
         }
         System.out.println("The housePet name is:"+animals.getName()+
                 "it's about"+animals.getAge()+"years old");
+    }
+
+    @Test
+    public void teacherTest(){
+        AllTestHere.schools(new Teacher("张晓丽",21));
+        AllTestHere.schools(new Teacher2("刘菲菲",31));
+    }
+
+    public static void schools(School school){
+        //通过toString获取参数
+        System.out.println(school);
+        school.teach();
     }
 }

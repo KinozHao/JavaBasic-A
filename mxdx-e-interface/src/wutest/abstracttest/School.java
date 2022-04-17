@@ -25,22 +25,30 @@ abstract class School {
 		return age;
 	}
 	public abstract void teach();
+
+	@Override
+	public String toString() {
+		return "School{" +
+				"name='" + name + '\'' +
+				", age=" + age +
+				'}';
+	}
 }
-class teacher extends School {//son inheritance father
-	public teacher(){}//None parametric structure
-	public teacher(String name,int age){//Yeah parametric structure
+class Teacher extends School {//son inheritance father
+	public Teacher(){}//None parametric structure
+	public Teacher(String name,int age){//Yeah parametric structure
 		super(name,age);//super transfer father class
 	}
 	public void teach(){//School force override
-		System.out.println("基础班老师");
+		System.out.println("刚毕业的老师");
 	}
 }
-class teacher2 extends School {//son inheritance father
-	public teacher2(){}
-	public teacher2(String name,int age){
+class Teacher2 extends School {//son inheritance father
+	public Teacher2(){}
+	public Teacher2(String name, int age){
 		super(name,age);//super transfer father class
 	}
 	public void teach(){
-		System.out.println("就业班老师");
+		System.out.println("年级主任");
 	}
 }
