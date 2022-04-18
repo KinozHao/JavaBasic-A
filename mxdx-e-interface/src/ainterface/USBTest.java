@@ -31,7 +31,7 @@ interface USB{
     //停止
     void stop();
 }
-
+//U盘类
 class Flash implements USB{
 
     @Override
@@ -44,6 +44,7 @@ class Flash implements USB{
         System.out.println("U盘结束工作");
     }
 }
+//打印机类
 class Printer implements USB{
 
     @Override

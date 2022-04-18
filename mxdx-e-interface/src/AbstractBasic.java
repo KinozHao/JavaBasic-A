@@ -10,15 +10,13 @@ public class AbstractBasic {
 	@Test
 	public void abstractTest() {
 		//抽象类不能直接实例化，一般都是用子类方法去实现
-		aHuman aHuman = new Freshman("陈子杨", 19);
-		System.out.println(aHuman);
-		aHuman.eat();
-		aHuman.learn();
+		//多态体现 静态方法体现 类名调用
+		AbstractBasic.anony(new Freshman("陈子杨", 19));
 	}
 
 	@Test
 	public void anonymousUs(){
-		//匿名类的使用
+		//类匿名 对象名不匿名
 		aHuman aa = new aHuman() {
 			@Override
 			public void eat() {
@@ -48,9 +46,10 @@ public class AbstractBasic {
 	}
 
 	//多态在方法的体现
-	public void anony(aHuman aHuman){
+	public static void anony(aHuman aHuman){
 		aHuman.eat();
 		aHuman.learn();
+		System.out.println(aHuman);
 	}
 }
 
