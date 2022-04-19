@@ -10,9 +10,6 @@
       <module fileurl="file://$PROJECT_DIR$/mxdx-c-inherit/mxdx-c-inherit.iml" filepath="$PROJECT_DIR$/mxdx-c-inherit/mxdx-c-inherit.iml" />
       <module fileurl="file://$PROJECT_DIR$/mxdx-d-polymorphism/mxdx-d-polymorphism.iml" filepath="$PROJECT_DIR$/mxdx-d-polymorphism/mxdx-d-polymorphism.iml" />
       <module fileurl="file://$PROJECT_DIR$/mxdx-e-interface/mxdx-e-interface.iml" filepath="$PROJECT_DIR$/mxdx-e-interface/mxdx-e-interface.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mxdx-f-innerclass/mxdx-f-innerclass.iml" filepath="$PROJECT_DIR$/mxdx-f-innerclass/mxdx-f-innerclass.iml" />
-      <module fileurl="file://$PROJECT_DIR$/next-g-object/next-g-object.iml" filepath="$PROJECT_DIR$/next-g-object/next-g-object.iml" />
-      <module fileurl="file://$PROJECT_DIR$/next-h-package-group/next-h-package-group.iml" filepath="$PROJECT_DIR$/next-h-package-group/next-h-package-group.iml" />
     </modules>
   </component>
 </project>
