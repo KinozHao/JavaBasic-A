@@ -8,18 +8,21 @@ import customerlist.utility.CMUtility;
  * @author kinoz
  * @date 2022/4/2 - 14:42
  * @apiNote ui层，负责菜单显示和处理用户操作
+ * 视图层 显示数据
  */
 public class CustomerView {
    private CustomerList customerList = new CustomerList(10);
 
     public static void main(String[] args) {
-        CustomerView View =new CustomerView();
+        CustomerView View = new CustomerView();
         View.enterMainMenu();
     }
 
     public CustomerView(){
-        Customer cr = new Customer("刘",'男',23,"666666","666@qq.com");
-        customerList.addCustomer(cr);
+        //Customer cr = new Customer("刘",'男',23,"666666","666@qq.com");
+        //匿名对象(此对象为默认对象)
+        customerList.addCustomer(
+                new Customer("刘月",'男',23,"1263266","8766@qq.com"));
     }
     //显示客户界面
    public void enterMainMenu(){

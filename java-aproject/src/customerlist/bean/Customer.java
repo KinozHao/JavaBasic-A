@@ -3,7 +3,8 @@ package customerlist.bean;
 /**
  * @author kinoz
  * @date 2022/4/2 - 14:41
- * @apiNote 此类为实体对象，用来封装客户信息
+ * @apiNote 此类为实体对象，用来封装客户信息(JavaBean开发流程中的体现)
+ * 模型层 处理数据
  */
 
 public class Customer {

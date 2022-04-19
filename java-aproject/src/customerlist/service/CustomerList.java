@@ -6,6 +6,7 @@ import customerlist.bean.Customer;
  * @author kinoz
  * @date 2022/4/2 - 14:42
  * @apiNote 为Customer对象的管理模块，内部用数组管理一组Customer对象，提供相应的增删改查和遍历方法，且供CustomerView调用
+ * 控制层 处理业务逻辑
  */
 public class CustomerList {
     private Customer[] cusobjcet;   //保存客户对象的数组
