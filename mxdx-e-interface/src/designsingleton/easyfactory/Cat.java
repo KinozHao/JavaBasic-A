@@ -9,14 +9,14 @@ class Cat extends Animals {
 
     @Override
     public void eat() {
-        System.out.println("The cat eat fish");
+        System.out.println("√®≥‘”„");
     }
 }
 
 class Dog extends Animals {
     @Override
     public void eat() {
-        System.out.println("Thed dog eat meet");
+        System.out.println("π∑≥‘»‚");
     }
 }
 

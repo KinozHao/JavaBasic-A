@@ -36,7 +36,8 @@ class Flash implements USB{
 
     @Override
     public void start() {
-        System.out.println("U盘工作");
+            System.out.println("U盘工作");
+            System.out.println("速度不够加载");
     }
 
     @Override

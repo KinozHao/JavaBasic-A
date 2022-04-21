@@ -3,10 +3,10 @@ package ainterface;
  * @author kinoz
  * @date 2022/4/17 - 16:22
  * @apiNote
- * 接口不能被实例化,因为调用抽象方法没有意义
- * 接口的实例化和多态一样
- * 接口中的方法都是抽象的(abstract可以直接省略不写)
- * 实现接口的类可以写为抽象类(也可以不写)
+ * 接口不能被实例化，由实现它的类来实例化(多态)
+ * 接口中的方法都是抽象的(abstract可不写)
+ * 实现接口的类可以写为抽象类
+ * 接口中所有方法实例类都重写了，可以不写
  */
 public class InterfaceBasic {
 	public static void main(String[] args) {

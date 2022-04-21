@@ -8,15 +8,15 @@
 public class MxdxBasic {
 
 	public static void main(String[] args) {
-	Student s=new Student();	//创建Student类的对象
-		//调用类的结构 属性、方法
-		s.age=17;
-		s.name="jack james";
-		s.gender="male";
-	System.out.println(s.name+"..."+s.age+s.gender);
-		s.sleep();				//调用学生类里面的方法
-		s.study();
-		s.talk("Spanish");
+		Student s=new Student();	//创建Student类的对象
+			//调用类的结构 属性、方法
+			s.age=17;
+			s.name="jack james";
+			s.gender="male";
+		System.out.println(s.name+"..."+s.age+s.gender);
+			s.sleep();				//调用学生类里面的方法
+			s.study();
+			s.talk("Spanish");
 	}
 
 }
