@@ -3,22 +3,22 @@ package customerlist.bean;
 /**
  * @author kinoz
  * @date 2022/4/2 - 14:41
- * @apiNote æ­¤ç±»ä¸ºå®ä½“å¯¹è±¡ï¼Œç”¨æ¥å°è£…å®¢æˆ·ä¿¡æ¯(JavaBeanå¼€å‘æµç¨‹ä¸­çš„ä½“ç°)
- * æ¨¡å‹å±‚ å¤„ç†æ•°æ®
+ * @apiNote ´ËÀàÎªÊµÌå¶ÔÏó£¬ÓÃÀ´·â×°¿Í»§ĞÅÏ¢(JavaBean¿ª·¢Á÷³ÌÖĞµÄÌåÏÖ)
+ * Ä£ĞÍ²ã ´¦ÀíÊı¾İ
  */
 
 public class Customer {
-    private String name;    //ç”¨æˆ·å
-    private char gender;    //æ€§åˆ«
-    private int age;    //å¹´çºª
-    private String phone;    //æ‰‹æœºå·
-    private String email;    //é‚®ç®±
+    private String name;    //ÓÃ»§Ãû
+    private char gender;    //ĞÔ±ğ
+    private int age;    //Äê¼Í
+    private String phone;    //ÊÖ»úºÅ
+    private String email;    //ÓÊÏä
 
-    public Customer(){  //ç©ºå‚æ„é€ å™¨
+    public Customer(){  //¿Õ²Î¹¹ÔìÆ÷
 
     }
 
-    public Customer(String name, char gender, int age, String phone, String email) {    //æœ‰å‚æ„é€ å™¨
+    public Customer(String name, char gender, int age, String phone, String email) {    //ÓĞ²Î¹¹ÔìÆ÷
         this.name = name;
         this.gender = gender;
         this.age = age;

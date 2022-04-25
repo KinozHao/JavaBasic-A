@@ -5,24 +5,24 @@ import customerlist.bean.Customer;
 /**
  * @author kinoz
  * @date 2022/4/2 - 14:42
- * @apiNote ä¸ºCustomerå¯¹è±¡çš„ç®¡ç†æ¨¡å—ï¼Œå†…éƒ¨ç”¨æ•°ç»„ç®¡ç†ä¸€ç»„Customerå¯¹è±¡ï¼Œæä¾›ç›¸åº”çš„å¢åˆ æ”¹æŸ¥å’Œéå†æ–¹æ³•ï¼Œä¸”ä¾›CustomerViewè°ƒç”¨
- * æ§åˆ¶å±‚ å¤„ç†ä¸šåŠ¡é€»è¾‘
+ * @apiNote ÎªCustomer¶ÔÏóµÄ¹ÜÀíÄ£¿é£¬ÄÚ²¿ÓÃÊı×é¹ÜÀíÒ»×éCustomer¶ÔÏó£¬Ìá¹©ÏàÓ¦µÄÔöÉ¾¸Ä²éºÍ±éÀú·½·¨£¬ÇÒ¹©CustomerViewµ÷ÓÃ
+ * ¿ØÖÆ²ã ´¦ÀíÒµÎñÂß¼­
  */
 public class CustomerList {
-    private Customer[] cusobjcet;   //ä¿å­˜å®¢æˆ·å¯¹è±¡çš„æ•°ç»„
-    private int totalCusNum;          //è®°å½•å·²ç»ä¿å­˜å®¢æˆ·çš„æ•°é‡
+    private Customer[] cusobjcet;   //±£´æ¿Í»§¶ÔÏóµÄÊı×é
+    private int totalCusNum;          //¼ÇÂ¼ÒÑ¾­±£´æ¿Í»§µÄÊıÁ¿
 
     /** 1
-    * åˆå§‹åŒ–customersæ•°ç»„çš„æ„é€ å™¨
-    * @param totalCustomer:æŒ‡å®šæ•°ç»„çš„é•¿åº¦
+    * ³õÊ¼»¯customersÊı×éµÄ¹¹ÔìÆ÷
+    * @param totalCustomer:Ö¸¶¨Êı×éµÄ³¤¶È
     */
     public CustomerList(int totalCustomer){
         cusobjcet = new Customer[totalCustomer];
     }
 
     /** 2
-     * å°†æŒ‡å®šçš„å®¢æˆ·æ·»åŠ åˆ°æ•°ç»„ä¸­
-     * @return true:æ·»åŠ æˆåŠŸ false:æ·»åŠ å¤±è´¥
+     * ½«Ö¸¶¨µÄ¿Í»§Ìí¼Óµ½Êı×éÖĞ
+     * @return true:Ìí¼Ó³É¹¦ false:Ìí¼ÓÊ§°Ü
      */
     public boolean addCustomer(Customer customer){
         if (totalCusNum >= cusobjcet.length){
@@ -34,10 +34,10 @@ public class CustomerList {
     }
 
     /** 3
-     * ä¿®æ”¹æŒ‡å®šç´¢å¼•ä½ç½®çš„å®¢æˆ·ä¿¡æ¯
-     * @param index å®¢æˆ·ç´¢å¼•
-     * @param crust æ–°çš„ç´¢å¼•
-     * @return true:ä¿®æ”¹æˆåŠŸ false:ä¿®æ”¹å¤±è´¥
+     * ĞŞ¸ÄÖ¸¶¨Ë÷ÒıÎ»ÖÃµÄ¿Í»§ĞÅÏ¢
+     * @param index ¿Í»§Ë÷Òı
+     * @param crust ĞÂµÄË÷Òı
+     * @return true:ĞŞ¸Ä³É¹¦ false:ĞŞ¸ÄÊ§°Ü
      */
     public boolean replaceCustomer(int index,Customer crust){
         if (index < 0 || index >= totalCusNum){
@@ -49,9 +49,9 @@ public class CustomerList {
     }
 
     /** 4
-     * åˆ é™¤æŒ‡å®šç´¢å¼•ä½ç½®çš„å®¢æˆ·ä¿¡æ¯
-     * @param index å®¢æˆ·ç´¢å¼•
-     * @return true:åˆ é™¤æˆåŠŸ false:åˆ é™¤å¤±è´¥
+     * É¾³ıÖ¸¶¨Ë÷ÒıÎ»ÖÃµÄ¿Í»§ĞÅÏ¢
+     * @param index ¿Í»§Ë÷Òı
+     * @return true:É¾³ı³É¹¦ false:É¾³ıÊ§°Ü
      */
     public boolean deleteCustomer(int index){
         if (index < 0 || index >= totalCusNum){
@@ -60,7 +60,7 @@ public class CustomerList {
             for (int i = index; i < totalCusNum -1 ; i++) {
                 cusobjcet[i] = cusobjcet[i+1];
             }
-            //æœ€åæœ‰æ•°æ®çš„å…ƒç´ éœ€è¦ç½®ç©º
+            //×îºóÓĞÊı¾İµÄÔªËØĞèÒªÖÃ¿Õ
             cusobjcet[totalCusNum -1] =null;
             totalCusNum--;
             return true;
@@ -68,21 +68,21 @@ public class CustomerList {
     }
 
     /** 5
-     * è¿”å›æ‰€æœ‰å®¢æˆ·ä¿¡æ¯
-     * @return è¿”å›çš„ä¸æ˜¯æ‰€æœ‰çš„æ•°ç»„ï¼Œè€Œæ˜¯æˆ‘ä»¬è‡ªå·±é€ çš„æ•°ç»„
+     * ·µ»ØËùÓĞ¿Í»§ĞÅÏ¢
+     * @return ·µ»ØµÄ²»ÊÇËùÓĞµÄÊı×é£¬¶øÊÇÎÒÃÇ×Ô¼ºÔìµÄÊı×é
      */
     public Customer[] getAllCustomer(){
         Customer[] crusts = new Customer[totalCusNum];
         for (int i = 0; i < totalCusNum; i++) {
-            // èµ‹çš„æ˜¯ç´¢å¼•å€¼ ä¸æ˜¯æ•°ç»„ æ„æ€å°±æ˜¯crustså’ŒcustomersæŒ‡å‘çš„æ˜¯åŒä¸€ä¸ªå¯¹è±¡å®ä½“
+            // ¸³µÄÊÇË÷ÒıÖµ ²»ÊÇÊı×é ÒâË¼¾ÍÊÇcrustsºÍcustomersÖ¸ÏòµÄÊÇÍ¬Ò»¸ö¶ÔÏóÊµÌå
             crusts[i] = cusobjcet[i];
         }
         return crusts;
     }
 
     /** 6
-     * è·å–æŒ‡å®šç´¢å¼•ä½ç½®çš„å®¢æˆ·ä¿¡æ¯
-     * @return å¦‚æœæ‰¾åˆ°äº†å…ƒç´ åˆ™è¿”å› æ²¡æ‰¾åˆ°è¿”å›null
+     * »ñÈ¡Ö¸¶¨Ë÷ÒıÎ»ÖÃµÄ¿Í»§ĞÅÏ¢
+     * @return Èç¹ûÕÒµ½ÁËÔªËØÔò·µ»Ø Ã»ÕÒµ½·µ»Ønull
      */
     public Customer getCustomer(int index){
         if (index < 0 || index >= totalCusNum){
@@ -92,7 +92,7 @@ public class CustomerList {
     }
 
     /** 7
-     * è·å–å­˜å‚¨å®¢æˆ·çš„æ•°é‡
+     * »ñÈ¡´æ´¢¿Í»§µÄÊıÁ¿
      */
     public int getTotalCusNum(){
         return totalCusNum;
